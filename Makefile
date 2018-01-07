@@ -406,9 +406,24 @@ KBUILD_CPPFLAGS := -D__KERNEL__
 
 KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-strict-aliasing -fno-common \
-		   -Werror-implicit-function-declaration \
+		   -Wno-implicit-function-declaration \
 		   -Wno-format-security \
-		   -Werror \
+		   -Wno-array-bounds \
+		   -fno-delete-null-pointer-checks \
+                   -Wno-sizeof-pointer-memaccess \
+                   -Wno-maybe-uninitialized \
+                   -Wno-unused-function \
+                   -Wno-unused-const-variable \
+                   -Wno-sign-compare \
+                   -Wno-unused-parameter \
+                   -Wno-misleading-indentation \
+                   -Wno-sequence-point \
+                   -Wno-discarded-array-qualifiers \
+                   -Wno-sizeof-array-argument \
+                   -Wno-shift-count-overflow \
+                   -Wno-shift-negative-value \
+                   -Wno-shift-count-negative \
+                   -Wno-bool-compare \
 		   -std=gnu89
 
 KBUILD_AFLAGS_KERNEL :=
