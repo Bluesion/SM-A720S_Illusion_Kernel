@@ -183,7 +183,7 @@ START_TIME=`date +%s`
 	(
 	FUNC_BUILD_BOOTIMG
 	) 2>&1	 | tee -a $RDIR/build/build.log
-mv -f $RDIR/build/ramdisk/image-new.img $RDIR/build/flash/boot.img
+mv -f $RDIR/build/AIK/image-new.img $RDIR/build/flash/boot.img
 mv -f $RDIR/build/build.log $RDIR/build/build-A720S.log
 ZIP_FILE_DIR=$RDIR/build/flash
 ZIP_NAME=Illusion_Kernel_$VERSION_NUMBER.zip
